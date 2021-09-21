@@ -1,16 +1,13 @@
-
-
-
 <a class="navbar-brand" href="#"><img
-        src="http://3.bp.blogspot.com/-qGXSMaaLW4M/UZ0uEc0WXpI/AAAAAAAAACI/5Tu_qkyBwag/s320/420565_120105364781817_1668584287_n.jpg"
-        class="img-fluid" width="220" height="130"></a>
+    src="http://3.bp.blogspot.com/-qGXSMaaLW4M/UZ0uEc0WXpI/AAAAAAAAACI/5Tu_qkyBwag/s320/420565_120105364781817_1668584287_n.jpg"
+    class="img-fluid" width="220" height="130"></a>
 
 <div class="sidebar-heading">Menu de Operaciones</div>
 
 <div class="list-group list-group-flush">
   <nav class="menu">
     <ul>
-      <input type="radio" name="menu" id="archive" >
+      <input type="radio" name="menu" id="archive">
       <li>
         <label for="archive" class="title"><i class="fa fa-folder"></i>CRM (Almacen)</label>
         <a href="#">Movimientos de Almacen</a>
@@ -24,32 +21,38 @@
       </li>
       <input type="radio" name="menu" id="edit">
       <li>
-        <label for="edit" class="title"><i class="fa fa-edit"></i>Edit</label>
-        <a href="#">Copy</a>
-        <a href="#">Cut</a>
-        <a href="#">Paste</a>
-        <a href="#">Undo</a>
+        <label for="edit" class="title"><i class="fa fa-edit"></i>Cuentas por Cobrar</label>
+        <a href="#">Reporte Cobranza</a>
+        <a href="#">Cobranza</a>
+        <a href="#">Clientes</a>
       </li>
       <input type="radio" name="menu" id="tools">
       <li>
-        <label for="tools" class="title"><i class="fa fa-gavel"></i>Tools</label>
-        <a href="#">Build</a>
-        <a href="#">Macros</a>
-        <a href="#">Command</a>
-        <a href="#">Snippets</a>
+        <label for="tools" class="title"><i class="fa fa-gavel"></i>Cuentas por Pagar</label>
+        <a href="#">Reporte de Pagos</a>
+        <a href="#">Pagos</a>
+        <a href="#">Proveedores</a>
+      </li>
+      <input type="radio" name="menu" id="tpv">
+      <li>
+        <label for="tpv" class="title"><i class="fa fa-gavel"></i>TPV</label>
+        <a href="#">Cortes de Caja</a>
+        <a href="#">Punto de Venta</a>
       </li>
       <input type="radio" name="menu" id="preferences" checked>
       <li>
-        <label for="preferences" class="title"><i class="fa fa-gears"></i>Preferences</label>
+        <label for="preferences" class="title"><i class="fa fa-gears"></i>Soporte del Sistema</label>
         <a href="#">Browser</a>
         <a href="#">Settings</a>
         <a href="#">Packages</a>
         <a href="#">Theme</a>
-        <a href="#">Browser</a>
-        <a href="#">Settings</a>
-        <a href="#">Packages</a>
-        <a href="#">Theme</a>
+        <a href="#" >Clientes</a>
+        <a href="#">Usuarios</a>
+        <a href="#">Nada</a>
+        <a href="#">Miscelanius</a>
       </li>
     </ul>
   </nav>
 </div>
+
+<router-outlet></router-outlet>

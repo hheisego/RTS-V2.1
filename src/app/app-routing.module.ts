@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { Testgrid2Component } from './HHcomponents/testgrid2/testgrid2.component';
+
+const routes: Routes = [{path:'clientes',component:Testgrid2Component}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
