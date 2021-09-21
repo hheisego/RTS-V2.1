@@ -28,10 +28,10 @@ export class Testgrid2Component implements OnInit {
     
   }
 
+
   
   source: Array<any> = this.customerList;
-  
-  
+    
   /*
   source: Array<any> = [
     {
