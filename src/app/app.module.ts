@@ -12,6 +12,7 @@ import { GuiGridModule } from '@generic-ui/ngx-grid';
 import { TestapiService } from './APIs/testapi.service'; //API service!
 import { HttpClientModule } from '@angular/common/http' //API services
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FixingmenuComponent } from './HHcomponents/fixingmenu/fixingmenu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     SidebarComponent,
     MenuComponent,
-    Testgrid2Component  
+    Testgrid2Component,
+    FixingmenuComponent  
   ],
   imports: [
     BrowserModule, AppRoutingModule, GuiGridModule, HttpClientModule, FormsModule,
