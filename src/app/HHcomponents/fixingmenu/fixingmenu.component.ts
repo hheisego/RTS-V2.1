@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FixingmenuComponent implements OnInit {
 
+  status: boolean = false;
+  icon: string = "bi bi-layout-text-sidebar-reverse";
+  
   constructor() { }
 
   ngOnInit(): void {

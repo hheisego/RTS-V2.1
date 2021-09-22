@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-pagenav',
+  templateUrl: './pagenav.component.html',
+  styleUrls: ['./pagenav.component.css']
 })
-export class AppComponent {
-  title = 'RTS-JS6';
-  showFiller = false;
+export class PagenavComponent implements OnInit {
+
   icon: string = "bi bi-layout-text-sidebar-reverse";
   status: boolean = false;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
   clickEvent(){
     
@@ -22,4 +25,6 @@ export class AppComponent {
     this.status = !this.status;  
     console.log("si se armo")
   }
+
+
 }

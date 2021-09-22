@@ -29,8 +29,6 @@ export class Testgrid2Component implements OnInit {
   }
 
 
-  
-  source: Array<any> = this.customerList;
     
   /*
   source: Array<any> = [
@@ -54,7 +52,8 @@ export class Testgrid2Component implements OnInit {
     columns: Array<any> = [
       {
         header: 'Nombre',
-        field: 'Nombre'
+        field: 'Nombre',
+        width: 180
       },
       {
         header: 'Domicilio',
@@ -62,7 +61,8 @@ export class Testgrid2Component implements OnInit {
       },
       {
         header: 'CP',
-        field: 'CP'
+        field: 'CP',
+        width: 50
       },
       {
         header: 'Telefono',
@@ -101,5 +101,11 @@ export class Testgrid2Component implements OnInit {
         field: 'id_Empresa'
       
       }];
+
+
+      loading = true;
+      rowSelection = true;
+      source: Array<any> = this.customerList;
+
 
 }
