@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TestapiService } from 'src/app/APIs/testapi.service'; //API service!
-
+import { GuiColumn, GuiPaging } from '@generic-ui/ngx-grid';
 
 
 @Component({
@@ -18,6 +18,10 @@ export class Testgrid2Component implements OnInit {
 
     this.service.getCustomerList().subscribe(data=>{
     this.customerList =  data;
+
+      
+
+
     console.log(this.customerList);
     });
   }  
@@ -48,6 +52,17 @@ export class Testgrid2Component implements OnInit {
       age: '25'
     }];
 */
+
+loading = true;
+rowSelection = true;
+paging: GuiPaging = {
+  enabled: true,
+  page: 1,
+  pageSize: 10,
+  pageSizes: [10, 25, 50],
+  pagerTop: true,
+  pagerBottom: true
+};
 
     columns: Array<any> = [
       {
@@ -103,8 +118,7 @@ export class Testgrid2Component implements OnInit {
       }];
 
 
-      loading = true;
-      rowSelection = true;
+
       source: Array<any> = this.customerList;
 
 
